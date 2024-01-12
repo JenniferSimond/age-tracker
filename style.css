@@ -1,0 +1,93 @@
+* {  
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container { 
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #006778, #00FFC6);
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1 { 
+    font-size: 60px;
+}
+
+.calculator h1 span {    
+    color: #FFB2E6;
+}
+
+.input-box { 
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);  
+    display: flex;
+    align-items: center;
+}
+
+.input-box [type="date"] { 
+    flex: 1;
+    margin-right: 18px;
+    padding: 14px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.input-box button {  
+    background-color: #FFB2E6;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.input-box button:active {
+    background-color: #E6A2C4;
+    transform: scale(0.98);
+}
+
+.input-box input::-webkit-calendar-picker-indicator { 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+}
+
+.side-image {
+    position: absolute;
+    top: 200px; /* Position the image lower than the h1 heading */
+    right: 5%;  /* Right margin for alignment */
+    width: 750px; /* Increase width to make the image larger */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the given dimensions */
+    max-height: 90vh; /* Maximum height constraint */
+    border-radius: 0px;
+}
+

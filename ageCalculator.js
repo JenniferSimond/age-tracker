@@ -3,7 +3,7 @@
 /* Func calaculates the number of days in a month for a given year.
     Date constructor() ^Resource_2: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date */
 function getDaysInMonth(year, month) {
-    /*the 0 is where we set day parameter to 0 so return last day of previous month. to get 
+    /*the 0 is where we set day parameter to 0 so it returns last day of previous month. to get 
     the num of days in the given month.*/
     return new Date(year, month, 0).getDate();
 }
@@ -34,7 +34,7 @@ function calculateAge() {
         monthDifference = currentMonth - birthMonth;
     } else {
         yearDifference--;
-        monthDifference = 12 + currentMonth - birthMonth;
+        monthDifference = (12 + currentMonth) - birthMonth;
     }
 
     if (currentDay >= birthDay) {

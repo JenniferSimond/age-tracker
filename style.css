@@ -80,14 +80,26 @@
     background-size: 30px;
 }
 
+#calculationResult {
+    color: #000; /* For visibility */
+    padding: 10px;
+    position: relative;
+    bottom: 80px;
+    left: 57%;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
 .side-image {
     position: absolute;
-    top: 380px; /* Position the image lower than the h1 heading */
-    right: 10%;  /* Right margin for alignment */
+    top: 520px; /* Positions the image lower than the h1 heading */
+    right: 5%; 
     width: 750px; /* Increase width to make the image larger */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits within the given dimensions */
-    max-height: 90vh; /* Maximum height constraint */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the given dimensions */
+    max-height: 90vh; /* Max height constraint */
     border-radius: 0px;
 }
 

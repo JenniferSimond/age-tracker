@@ -9,7 +9,9 @@ function getDaysInMonth(year, month) {
 }
 // Func calculates age based on user input & current date.
   // "+1" added to month becuase JavaScript is a count from zero language, so Jan has an index of.
-function calculate() {
+
+  
+function calculateAge() {
     let userInput = document.getElementById("date");
     let birthDate = new Date(userInput.value);
 
@@ -46,16 +48,17 @@ function calculate() {
         monthDifference = 11;
         yearDifference--;
     }
-
-    // Output or process the age data
-    console.log(`Age: ${yearDifference} years, ${monthDifference} months, and ${dayDifference} days.`);
+    
+    let resultDisplay = document.getElementById("calculationResult");
+    resultDisplay.innerHTML = `Age: ${yearDifference} years, ${monthDifference} months, and ${dayDifference} days.`;
 }
 
-// Setting maximum date input value to today and adding event listener for the calculate button
+// Add event listener to the calculate button
 document.addEventListener("DOMContentLoaded", () => {
+    let calculateButton = document.getElementById("calculateButton");
+    calculateButton.addEventListener("click", calculateAge);
+    
+    // Set max date input value to today
     let userInput = document.getElementById("date");
     userInput.max = new Date().toISOString().split('T')[0];
-
-    let calculateButton = document.getElementById("calculateButton");
-    calculateButton.addEventListener("click", calculate);
 });

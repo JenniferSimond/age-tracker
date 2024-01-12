@@ -82,8 +82,8 @@
 
 .side-image {
     position: absolute;
-    top: 200px; /* Position the image lower than the h1 heading */
-    right: 5%;  /* Right margin for alignment */
+    top: 380px; /* Position the image lower than the h1 heading */
+    right: 10%;  /* Right margin for alignment */
     width: 750px; /* Increase width to make the image larger */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the image fits within the given dimensions */
